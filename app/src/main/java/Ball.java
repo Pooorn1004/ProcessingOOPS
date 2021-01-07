@@ -1,6 +1,7 @@
 import processing.core.PApplet;
 
 class Ball {
+    public static final int DIAMETER = 10;
     private Position position;
     private final int speed;
 
@@ -13,6 +14,6 @@ class Ball {
         position.X += speed;
     }
     public void draw(PApplet pApplet) {
-        pApplet.ellipse(position.X,position.Y,10,10);
+        pApplet.ellipse(position.X,position.Y, DIAMETER, DIAMETER);
     }
 }
